@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    #    fetch-registry: true
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    health-check-url-path: /actuator/health
+
+spring:
+  application:
+    name: wg_authservice
+  profiles:
+    active: dev
+
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+
+server:
+  port: 5050
+  #  contextPath: /authserver
+  servlet:
+    context-path: /authserver

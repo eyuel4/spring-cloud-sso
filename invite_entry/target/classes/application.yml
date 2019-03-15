@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: wg_invite_entry
+server:
+  port: 6000
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyValue: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/Q7+zlmCj8e1+duAEfJ
+          o6vuojdFHHZqZ70YzsKQ2+09oceH9cs3cLjsX8mYkZJX0qjlHOhtppBsjQtH0uhy
+          sVImLsk5lB/EfuB3FFkBp1/Bz5AdpcnVtLfCtjvjkAd0RCxr95y9eQw1Qx/npwQ6
+          JuPxOohEpI5PSijcC+JuvHWv5Af/BcrKUAa/gTUwilW2wHrJh+kJpvTNQGEFsFFN
+          OWTMT5JfqMO5q+bOS6zqLYyvpFJVaj4WD2f+Zxi9BlF7RO5WFg9cI08Jki1U6pMj
+          OXnHTP5kUnI/yXr62Gsz5txfAnNzNwoktv21v2wch7tV4d3L5NZRLUyeo/NCeWDa
+          jwIDAQAB
+          -----END PUBLIC KEY-----
